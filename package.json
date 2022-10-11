@@ -1,0 +1,19 @@
+{
+  "name": "num_adder_full_cycle",
+  "version": "1.0.0",
+  "description": "Integer adder",
+  "main": "num_adder.js",
+  "scripts": {
+    "test": "node num_adder 1 2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmarcosfmg/codeeducation-ci.git"
+  },
+  "author": "jmarcosfmg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jmarcosfmg/codeeducation-ci/issues"
+  },
+  "homepage": "https://github.com/jmarcosfmg/codeeducation-ci#readme"
+}
