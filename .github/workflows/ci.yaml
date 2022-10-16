@@ -6,7 +6,6 @@ on:
     branches: [develop]      
 jobs:
   test-application:
-    name: test-application
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
@@ -15,3 +14,8 @@ jobs:
         node-version: 16
     - run: npm ci
     - run: npm test
+    - name: SonarCloud Scan
+      uses: SonarSource/sonarcloud-github-action@master
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
+        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
